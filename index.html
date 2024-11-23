@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chayote Notes - Gestor de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  </header>
+  <main>
+    <section id="task-creator">
+      <h2>Agregar Tarea</h2>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Escribe tu tarea aquí" maxlength="100" required>
+        <button type="submit">Agregar Tarea</button>
+      </form>
+      <p id="task-limit-warning"></p>
+    </section>
+    <section id="task-list">
+      <h2>Tareas del Momento</h2>
+      <ul id="tasks"></ul>
+      <div class="priority-key">
+        <span><span class="priority-dot red"></span> Alta</span>
+        <span><span class="priority-dot yellow"></span> Media</span>
+        <span><span class="priority-dot blue"></span> Baja</span>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Chayote Notes © 2024 | Contacto: contacto@chayotenotes.com</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
